@@ -1,0 +1,43 @@
+<view class="container">
+
+  <!-- 用户 openid -->
+  <!-- <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view> -->
+  <!-- <van-panel title="标题" desc="描述信息" status="状态">
+    <view>内容</view>
+  </van-panel> -->
+  <view class="user-center">
+    <view wx:if="{{hasLogin}}">
+      <view class="user-head">
+        <image class="user-head-img" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="user-name">
+        {{userInfo.nickName}}
+      </view>
+    </view>
+
+    <view wx:else>
+      <button 
+        wx:if="{{canIUse}}"  
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="loginbtn"
+      >授权登陆</button>
+    </view>
+  </view>
+  
+  <van-cell-group class="user-cell">
+    <van-cell title="历史记录" is-link value="" />
+    <van-cell title="相册" is-link value="" />
+  </van-cell-group>
+
+</view>

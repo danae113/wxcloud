@@ -1,0 +1,40 @@
+/* miniprogram/pages/user/user.wxss */
+.user-cell{
+  width: 750rpx
+}
+.user-center{
+  width: 750rpx;
+  height: 400rpx;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user-head{
+  width: 150rpx;
+  height: 150rpx;
+  background: #fff;
+  border-radius: 75rpx;
+}
+.user-head-img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+.user-name{
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.loginbtn{
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background: #fff;
+  border: 1rpx solid #666;
+  font-size: 24rpx;
+  color: #666;
+  letter-spacing: 1rpx;
+}

@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="record-area">
+    <view class="record-area-btn" bindtap="toRecord">点击记录</view>
+  </view>
+  <view class="record-tubiao">
+    <view class="title">走势图</view>
+    <view class="zoushitu"></view>
+  </view>
+</view>
