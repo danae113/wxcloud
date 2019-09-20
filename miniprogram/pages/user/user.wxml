@@ -36,8 +36,8 @@
   </view>
   
   <van-cell-group class="user-cell">
-    <van-cell title="历史记录" is-link value="" />
-    <van-cell title="相册" is-link value="" />
+    <van-cell title="历史记录" is-link value="" url="/pages/history/history"/>
+    <van-cell title="相册" is-link value=""  url="/pages/photos/photos" />
   </van-cell-group>
 
 </view>

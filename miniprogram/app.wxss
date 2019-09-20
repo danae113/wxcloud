@@ -155,3 +155,9 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+.photoimg{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx ;
+}

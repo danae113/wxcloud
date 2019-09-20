@@ -1,15 +1,17 @@
-/* miniprogram/pages/user/user.wxss */
 .user-cell{
   width: 750rpx
 }
 .user-center{
   width: 750rpx;
   height: 400rpx;
-  background: #eee;
+  background: #f9f9f9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top: 1rpx solid #eee;
+  /* border-bottom: 1rpx solid #eee; */
+  margin-bottom: 5rpx;
 }
 .user-head{
   width: 150rpx;

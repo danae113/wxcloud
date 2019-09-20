@@ -1,4 +1,8 @@
-//app.js
+import {
+  COMMONFN
+} from "utils/util.js" //公共函数
+
+
 App({
   onLaunch: function () {
     
@@ -16,5 +20,6 @@ App({
     }
 
     this.globalData = {}
-  }
+  },
+  COMMONFN: COMMONFN, //公共函数
 })

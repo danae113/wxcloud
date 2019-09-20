@@ -89,23 +89,25 @@ Page({
             height: this.data.heightValue,
             weight: this.data.weightValue,
             bmi: this.data.bmi,
-            photos: this.data.photos
+            photos: this.data.photos,
+            creatTime: new Date()
           }
         }).then(res => {
           wx.hideLoading()
           wx.showToast({
             title: '保存成功',
           })
-          wx.navigateTo({
-            url: '../record/record',
+          wx.reLaunch({
+            url: '/pages/record/record',
           })
+          
         }).catch(err => {
           wx.hideLoading();
           wx.showToast({
             title: '评价失败',
           })
-          wx.navigateTo({
-            url: '../record/record',
+          wx.reLaunch({
+            url: '/pages/record/record',
           })
         })
       })
