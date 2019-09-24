@@ -1,0 +1,25 @@
+<view class="container pagecontainer">
+  <van-cell-group>
+    <van-field
+      value="{{ title }}"
+      type="text"
+      label="标题"
+      placeholder="请输入标题"
+      border="{{true}}"
+    />
+ 
+    <van-field
+      value="{{ content }}"
+      type="textarea"
+      label="内容"
+      placeholder="请输入内容"
+      border="{{false}}"
+      style="height:200rpx;color:red"
+    />
+  </van-cell-group>
+  <van-radio-group value="{{ radio }}" bind:change="onChange">
+    <van-radio name="1">不重要</van-radio>
+    <van-radio name="2">一般</van-radio>
+    <van-radio name="3">重言</van-radio>
+  </van-radio-group>
+</view>

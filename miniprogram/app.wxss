@@ -6,6 +6,10 @@
   align-items: center;
   box-sizing: border-box;
 } 
+.pagecontainer{
+  width: 750rpx;
+  margin: 50rpx auto;
+}
 
 button {
   background: initial;
@@ -161,3 +165,4 @@ page {
   height: 150rpx;
   margin: 10rpx ;
 }
+

@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/todo/todo",
     "pages/user/user",
     "pages/record/record",
     "pages/add/add",
     "pages/index/index",
     "pages/history/history",
-    "pages/photos/photos"
+    "pages/photos/photos"    
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -21,6 +22,10 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/todo/todo",
+        "text": "待办"
+      },
+      {
         "pagePath": "pages/user/user",
         "text": "我的"
       }
@@ -30,7 +35,10 @@
     "van-button": "/vant-weapp/button",
     "van-cell": "/vant-weapp/cell",
     "van-cell-group": "/vant-weapp/cell-group",
-    "van-field": "/vant-weapp/field"
+    "van-field": "/vant-weapp/field",
+    "van-radio": "/vant-weapp/radio",
+    "van-radio-group": "/vant-weapp/radio-group",
+    "van-rate": "/vant-weapp/rate"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,21 +1,23 @@
-const app = getApp()
-//云数据库初始化
-const db = wx.cloud.database()
-
+// miniprogram/pages/todo/todo.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    dataList: []
+
   },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function (options) {
-    this.getDataList()
+
   },
-  getDataList(){
-    db.collection('dataList').get().then(res=>{
-      this.setData({
-        dataList: res.data
-      })
-    })
-  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
   onReady: function () {
 
   },
@@ -25,6 +27,11 @@ Page({
    */
   onShow: function () {
 
+  },
+  addTodo(){
+    wx.navigateTo({
+      url: '/components/addTodo/addTodo',
+    })
   },
 
   /**
