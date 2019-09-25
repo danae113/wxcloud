@@ -1,1 +1,39 @@
 /* components/addTodo/addTodo.wxss */
+.container{
+  background: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.form-cell{
+  width: 700rpx;
+  height: auto;
+  margin-bottom: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.form-input{
+  border: 0rpx;
+  border-bottom: 1rpx solid #eee;
+  height: 100rpx;
+  padding: 0 20rpx;
+  background: #fff
+}
+.form-textarea{
+  border: 0rpx;
+  border-bottom: 1rpx solid #eee;
+  height: 200rpx;
+  padding: 0 20rpx;
+  background: #fff
+}
+
+.form-cell-fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  
+}

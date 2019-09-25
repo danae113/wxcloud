@@ -12,7 +12,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "云开发",
+    "navigationBarTitleText": "Todo",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

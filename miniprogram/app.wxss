@@ -1,4 +1,7 @@
 /**app.wxss**/
+page{
+  background: #fff
+}
 .container {
   width: 100%;
   display: flex;
@@ -8,7 +11,7 @@
 } 
 .pagecontainer{
   width: 750rpx;
-  margin: 50rpx auto;
+  margin: 50rpx 0;
 }
 
 button {
