@@ -2,9 +2,6 @@ const db = wx.cloud.database(); // 初始化数据库
 
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     heightValue: '',
     weightValue: '',

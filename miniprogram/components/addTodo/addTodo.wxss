@@ -12,7 +12,13 @@
   margin-bottom: 50rpx;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+}
+.image-item{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 15rpx;
 }
 .form-input{
   border: 0rpx;
@@ -36,4 +42,11 @@
   width: 100%;
   height: 100rpx;
   
+}
+.radio{
+  display: flex;
+  flex-direction: row;
+}
+.radioitem{
+  margin-right: 50rpx;
 }

@@ -38,7 +38,8 @@
     "van-field": "/vant-weapp/field",
     "van-radio": "/vant-weapp/radio",
     "van-radio-group": "/vant-weapp/radio-group",
-    "van-rate": "/vant-weapp/rate"
+    "van-rate": "/vant-weapp/rate",
+    "van-picker": "/vant-weapp/picker"
   },
   "sitemapLocation": "sitemap.json"
 }

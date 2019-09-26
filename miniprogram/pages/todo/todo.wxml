@@ -1,1 +1,12 @@
 <van-button round type="info" bindtap="addTodo" class="addButton">+</van-button>
+
+<view class="container">
+  <view class="datalist-item" wx:for="{{dataList}}" wx:key="{{item._id}}">
+    <switch type="checkbox" checked="{{switch2Checked}}" bindchange="switch2Change"/>
+    <view class="">{{item.title}}</view>
+    <view wx:if="{{item.level==1}}">重要</view>
+    <view wx:elif="{{item.level==2}}">一般</view>
+    <view wx:else>不重要</view>
+    <view >{{item.needData}}</view>
+  </view>
+</view>

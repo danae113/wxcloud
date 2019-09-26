@@ -1,32 +1,42 @@
 <view class="container">
-  <view class="form-cell">
+  <view class="form-cell" style="border-bottom:1rpx solid #eee;padding-bottom:10rpx">
     添加一个待办事项
   </view>
+
   <view class="form-cell">
-    <input type="text" class="form-input" placeholder="标题" />
+    <textarea placeholder="Todo" class="form-textarea"  bindblur="inputcon"/>
   </view>
   <view class="form-cell">
-    <textarea placeholder="内容" class="form-textarea"/>
-  </view>
-  <view class="form-cell">
-    <checkbox-group bindchange="checkboxChange">
-      <label class="checkbox" wx:for="{{checkArray}}">
-        <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-      </label>
-    </checkbox-group>
-  </view>
-  <view class="form-cell">
-    <view class="form-cell-til">完成日期：</view>
-    <view class="form-cell-con" wx:if="{{needData}}">{{needData}}</view>
-    <view class="form-cell-con" wx:else> <van-button type="primary" size="small" color="#1989fa">添加</van-button> </view>
-  </view>
-  <view class="form-cell">
-    <view class="form-cell-til">添加图片：</view>
-    <view class="form-cell-con" wx:if="{{images.length>0}}">123</view>
-    <view class="form-cell-con" wx:else> <van-button type="primary" size="small" color="#1989fa">添加</van-button> </view>
+    <van-radio-group value="{{ level }}" bind:change="onChange" class="radio">
+      <van-radio class="radioitem" name="1">重要</van-radio>
+      <van-radio class="radioitem" name="2">一般</van-radio>
+      <van-radio class="radioitem" name="3">不重要</van-radio>
+    </van-radio-group>
   </view>
 
-  <view class="form-cell-fixed">
-    <van-button type="primary" size="large" bindtap="submit" color="#1989fa">保存</van-button>
+  <view class="form-cell">
+    <picker mode="date" value="{{needData}}" start="2019-01-01" end="2025-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        需求日期: {{needData}}
+      </view>
+    </picker>    
+  </view>  
+
+  <view class="form-cell">
+    <view class="form-cell-til">添加图片：</view>    
+    <view class="form-cell-con" >
+      <van-button type="primary" size="small" color="#1989fa" bindtap="addImg">添加</van-button>
+    </view>
   </view>
+  <view class="form-cell">
+    <block wx:for="{{images}}" wx:key="{{index}}">
+      <image src="{{item}}" class="image-item" />
+    </block>
+  
+  </view>
+
+  <view class="form-cell">
+    <van-button type="primary" size="large" bindtap="submit" color="#1989fa" style="width:700rpx">保存</van-button>
+  </view>
+
 </view>
