@@ -60,6 +60,12 @@
 					"pathName": "pages/history/history",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addTodo/addTodo",
+					"pathName": "pages/addTodo/addTodo",
+					"scene": null
 				}
 			]
 		}

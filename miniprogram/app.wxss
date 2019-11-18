@@ -170,3 +170,7 @@ page {
   margin: 10rpx ;
 }
 
+.iconimg{
+  width: 50rpx;
+  height: 50rpx;
+}

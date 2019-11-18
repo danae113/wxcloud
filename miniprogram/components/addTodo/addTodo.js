@@ -14,7 +14,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    title: '',
     content: '',
     level: '',
     needData: '',
@@ -35,18 +34,12 @@ Component({
         needData: nowYear + '-' + nowMonth + '-' + nowDay
       })
     },
-    inputtil(e){
-      this.setData({
-        title: e.detail.value
-      })
-    },
     inputcon(e){
       this.setData({
         content: e.detail.value
       })
     },
     onChange(e){
-      console.log(e)
       this.setData({
         level: e.detail
       })
@@ -72,13 +65,9 @@ Component({
       })
     },
     submit(){
-      console.log('submit')
       var flag = true
       var msg = ""
-      if (!this.data.title){
-        flag = false;
-        msg = '标题不能为空'
-      } else if (!this.data.content){
+      if (!this.data.content){
         flag = false;
         msg = '内容不能为空'
       } else if(!this.data.level){
@@ -87,14 +76,12 @@ Component({
       } else if (!this.data.needData) {
         flag = false;
         msg = '请选择日期'
-      }
-      console.log(flag)
-      if (flag){        
+      }      
+      if (flag){
         wx.showLoading({
           title: '保存中',
         })
         let data = {
-          title: this.data.title,
           content: this.data.content,
           level: this.data.level,
           needData: this.data.needData,
@@ -126,7 +113,7 @@ Component({
         
         Promise.all(promiseArr).then(res => {
           console.log('res',res)
-          db.collection('todo').add({
+          db.collection('todos').add({
             data: data
           }).then(res => {
             console.log(res)

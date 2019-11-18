@@ -1,0 +1,23 @@
+<textarea name="content" placeholder="Todo" class="form-textarea" bindblur="inputcon" />
+
+<picker mode="date" value="{{needData}}" start="2019-01-01" end="2025-01-01" bindchange="bindDateChange">
+  <van-cell title="结束日期" value="{{needData}}" icon="label-o">
+    <van-button wx:if="{{!needData}}" type="primary" size="mini" round >添加</van-button>
+  </van-cell>
+</picker>
+
+<van-cell title="添加图片" bindtap="addphoto" icon="photo-o">
+  <van-button type="primary" size="mini" round >添加</van-button>
+</van-cell>
+
+<van-cell title="添加位置" bindtap="addads" value="{{address.pointname}}" icon="location-o">
+  <van-button wx:if="{{!address.pointname}}" type="primary" size="mini" round  >添加</van-button>
+</van-cell>
+
+<view class="form-cell">
+  <block wx:for="{{images}}" wx:key="{{index}}">
+    <image src="{{item}}" class="image-item" />
+  </block>
+</view>
+
+<van-button type="primary" bindtap="submit" color="#1989fa" style="width:700rpx;height: 40px;line-height: 40px;margin-left:25rpx;margin-right:25rpx">提交</van-button>

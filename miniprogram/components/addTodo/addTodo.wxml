@@ -1,10 +1,7 @@
 <view class="container">
-  <view class="form-cell" style="border-bottom:1rpx solid #eee;padding-bottom:10rpx">
-    添加一个待办事项
-  </view>
-
+  
   <view class="form-cell">
-    <textarea placeholder="Todo" class="form-textarea"  bindblur="inputcon"/>
+    <textarea name="content" placeholder="Todo" class="form-textarea"  bindblur="inputcon"/>
   </view>
   <view class="form-cell">
     <van-radio-group value="{{ level }}" bind:change="onChange" class="radio">
@@ -17,7 +14,7 @@
   <view class="form-cell">
     <picker mode="date" value="{{needData}}" start="2019-01-01" end="2025-01-01" bindchange="bindDateChange">
       <view class="picker">
-        需求日期: {{needData}}
+        结束日期: {{needData}}
       </view>
     </picker>    
   </view>  

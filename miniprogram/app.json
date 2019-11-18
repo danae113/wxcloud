@@ -2,11 +2,8 @@
   "pages": [
     "pages/todo/todo",
     "pages/user/user",
-    "pages/record/record",
-    "pages/add/add",
     "pages/index/index",
-    "pages/history/history",
-    "pages/photos/photos"    
+    "pages/addTodo/addTodo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -14,22 +11,6 @@
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "Todo",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/record/record",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/todo/todo",
-        "text": "待办"
-      },
-      {
-        "pagePath": "pages/user/user",
-        "text": "我的"
-      }
-    ]
   },
   "usingComponents": {
     "van-button": "/vant-weapp/button",
@@ -39,7 +20,10 @@
     "van-radio": "/vant-weapp/radio",
     "van-radio-group": "/vant-weapp/radio-group",
     "van-rate": "/vant-weapp/rate",
-    "van-picker": "/vant-weapp/picker"
+    "van-picker": "/vant-weapp/picker",
+    "van-row": "/vant-weapp/row",
+    "van-col": "/vant-weapp/col",
+    "van-icon": "/vant-weapp/icon"
   },
   "sitemapLocation": "sitemap.json"
 }

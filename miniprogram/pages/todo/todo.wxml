@@ -1,12 +1,17 @@
 <van-button round type="info" bindtap="addTodo" class="addButton">+</van-button>
-
 <view class="container">
-  <view class="datalist-item" wx:for="{{dataList}}" wx:key="{{item._id}}">
-    <switch type="checkbox" checked="{{switch2Checked}}" bindchange="switch2Change"/>
-    <view class="">{{item.title}}</view>
-    <view wx:if="{{item.level==1}}">重要</view>
-    <view wx:elif="{{item.level==2}}">一般</view>
-    <view wx:else>不重要</view>
-    <view >{{item.needData}}</view>
+  <view wx:if="{{dataList.length==0}}" style="margin:50rpx auto;line-height:100rpx;">
+    还没有待办事情，快去添加吧
   </view>
+  <!-- 当天 -->
+  <view class="data-box">
+
+    <block wx:for="{{dataList}}" wx:key="{{item._id}}">
+      <van-cell title="{{item.content}}" value="{{item.isFinish ? 'Doing':'Done'}}" border />
+    </block>
+
+  </view>
+
+
+
 </view>

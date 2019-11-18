@@ -1,15 +1,40 @@
 /* miniprogram/pages/todo/todo.wxss */
+page{
+  background: #fff
+}
 .addButton{
   position: fixed;
   bottom: 100rpx;
-  right: 100rpx;
-  font-size: 40rpx;
+  right: 50%;
+  margin-right: -50rpx;
 }
 
-.datalist-item{
-  width: 700rpx;
-  background: #fff;
+.data-box{
+  width: 100%;
+}
+.data-box-til{
+  height: 60rpx;
+  width: 100%;
+  background: #eee;
+  line-height: 60rpx;
+  color: #444;
+  padding-left: 30rpx;
+}
+
+.data-box-list{
   display: flex;
   flex-direction: row;
-  margin: 10rpx 0;
+  margin: 20rpx;
+  justify-content: space-between;
+}
+.item-cell{
+  display: flex;
+  flex-direction: row
+}
+.imgCell{
+  margin-left: 20rpx
+}
+.imgCell,.imgCell-image{
+  width: 50rpx;
+  height: 50rpx;
 }
